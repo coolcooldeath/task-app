@@ -10,7 +10,6 @@ web-build/
 expo-env.d.ts
 
 # Native
-.kotlin/
 *.orig.*
 *.jks
 *.p8
@@ -36,8 +35,36 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-app-example
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
 
-# generated native folders
-/ios
-/android
+# Expo / React Native
+.expo/
+.expo-shared/
+android/
+ios/
+web-build/
+dist/
+
+# Build outputs
+build/
+*.apk
+*.aab
+*.ipa
+
+# System
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Env / secrets
+.env
+*.keystore
+*.jks
+debug.keystore
